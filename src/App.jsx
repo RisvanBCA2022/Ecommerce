@@ -22,6 +22,8 @@ import ProductsinAdmin from './Components/Admin/ProductsinAdmin'
 import UpdateProducts from './Components/Admin/UpdateProducts'
 import Addproduct from './Components/Admin/Addproduct'
 import Buy from './Components/Pages/Buy'
+import Mens from './Components/Admin/Mens'
+import Womens from './Components/Admin/Womens'
 
 const App = () => {
 
@@ -62,6 +64,8 @@ const App = () => {
       <Route path='/adminproducts' element={<ProductsinAdmin />} />
       <Route path='/updateproducts/:id' element={<UpdateProducts />} />
       <Route path='/addproducts' element={<Addproduct />} />
+      <Route path='/mens' element={<Mens />} />
+      <Route path='/womens' element={<Womens />} />
       </Route>
     </Routes>
     </AuthContext.Provider>

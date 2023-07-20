@@ -43,7 +43,7 @@ const Recommended = () => {
     <>
     <Navbar expand="lg" className="bgcolor navbar-dark">
       <Container fluid >
-        <Navbar.Brand style={{color:"white"}}>Shoe Store</Navbar.Brand>
+        <Navbar.Brand style={{color:"white"}} onClick={() => navigate('/')}>Shoe Store</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll"  />
         <Navbar.Collapse id="navbarScroll" style={{color:"white"}} >
           <Nav

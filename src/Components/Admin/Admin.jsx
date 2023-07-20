@@ -1,8 +1,15 @@
 import React, { useContext } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../Context/AuthContext';
 
 const Admin = () => {
+  const {setlogin}=useContext(AuthContext)
   const navigate = useNavigate();
+
+  const logout=()=>{
+    setlogin(false)
+    navigate('/login')
+  }
 
   return (
     <div>
@@ -17,11 +24,18 @@ const Admin = () => {
             <button className="text-white btn-secondary" onClick={() => navigate('/adminproducts')}>
               Product
             </button>
+            <button className="text-white btn-primary" onClick={() => navigate('/mens')}>
+              Mens
+            </button>
+            <button className="text-white btn-primary" onClick={() => navigate('/womens')}>
+              womens
+            </button>
           </div>
-          <button className="text-white btn-red"  onClick={() => navigate('/login')}>
+          <button className="text-white btn-red"  onClick={logout}>
             Logout
           </button>
         </div>
+        
       </nav>
 
       {/* Main Content */}

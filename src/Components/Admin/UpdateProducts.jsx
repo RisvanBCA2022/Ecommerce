@@ -40,10 +40,7 @@ const UpdateProducts = () => {
     }
 
   return (
-    <>
-       
-           
-                
+    <>        
                 <tr>
                     <th>product id</th>
                     <th>product name</th>
@@ -78,7 +75,7 @@ const UpdateProducts = () => {
                       id="image"
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       placeholder="Enter the product image URL"
-                      required
+                      
                     />
                   </div>
                   <div className="mb-4">
@@ -90,7 +87,7 @@ const UpdateProducts = () => {
                       id="company"
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       placeholder="Enter the product company"
-                      required
+                      
                     />
                   </div>
                   <div className="mb-4">
@@ -102,7 +99,7 @@ const UpdateProducts = () => {
                       id="newprice"
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       placeholder="Enter the product new price"
-                      required
+                      
                     />
                   </div>
                   <div className="mb-4">
@@ -114,7 +111,7 @@ const UpdateProducts = () => {
                       id="oldprice"
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       placeholder="Enter the product old price"
-                      required
+                      
                     />
                   </div>
                   <button
@@ -124,16 +121,8 @@ const UpdateProducts = () => {
                     Add
                   </button>
                 </form>
-                </div>
-                
-                )} 
-                
-              
-                
-               
-                
-                
-      
+                </div>  
+                )}                  
     </>
   )
 }
